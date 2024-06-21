@@ -1,0 +1,50 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+header {
+  background-color: rgba(61, 8, 8, 0.838);
+  font-family: Helvetica;
+  font-size: 16px;
+  padding-top: 10px;
+  height: 90px;
+  width: 100%;
+}
+.container {
+  max-width: 1050px;
+  padding: 0px 15px;
+
+  margin: 0 auto;
+}
+header nav {
+  padding: 2rem 0;
+}
+
+header nav .home a {
+  color: white;
+  text-decoration: none;
+  margin-right: 4rem;
+  transition: all 0.3s ease;
+}
+header nav .home a:hover {
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.home,
+.contract,
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 4rem;
+}
+.img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
