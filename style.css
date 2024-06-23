@@ -2,49 +2,127 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  text-decoration: none;
 }
 header {
-  background-color: rgba(61, 8, 8, 0.838);
-  font-family: Helvetica;
-  font-size: 16px;
-  padding-top: 10px;
-  height: 90px;
+  font-family: "Courier New", Courier, monospace;
+}
+/* .top {
+  display: flex;
+  height: 35px;
+  width: 100%;
+  background-color: blueviolet;
+  padding-left: 200px;
+
+  align-items: center;
+  position: relative;
+} */
+/* .phone,
+.email,
+.location {
+  height: 20px;
+  width: 20px;
+}
+.phonenumber,
+.Gmail,
+.address {
+  margin-right: 20px;
+  padding-top: 5px; 
+}*/
+.navigation {
+  background: rgb(236, 119, 119);
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 12px;
   width: 100%;
 }
-.container {
-  max-width: 1050px;
-  padding: 0px 15px;
-
-  margin: 0 auto;
+.nav_div {
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
 }
-header nav {
-  padding: 2rem 0;
+.logo {
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(107, 39, 170);
 }
-
-header nav .home a {
-  color: white;
+li {
+  list-style: none;
+  display: inline-block;
+}
+li a {
+  color: rgb(107, 39, 170);
+  font-size: 18px;
+  font-weight: bold;
   text-decoration: none;
-  margin-right: 4rem;
-  transition: all 0.3s ease;
-}
-header nav .home a:hover {
-  color: blueviolet;
-  cursor: pointer;
-}
-
-.home,
-.contract,
-.navigation {
-  display: flex;
+  padding: 4px 9px;
   align-items: center;
 }
-
-.logo {
-  margin-right: 4rem;
+li a:hover {
+  background-color: rgb(139, 139, 219);
 }
-.img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  margin-bottom: 12px;
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+.Download_CV {
+  background-color: white;
+
+  border-color: rgb(144, 0, 255);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(144, 0, 255);
+  border-radius: 7px;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  transition: background-color, color 0.15s;
+  animation-delay: 1s;
+}
+.Download_CV:hover {
+  background-color: rgba(10, 2, 16, 0.76);
+  color: white;
+}
+.Download_CV:active {
+  opacity: 0.7;
+}
+.content {
+  display: flex;
+  margin-top: 10%;
+  padding-left: 40px;
+}
+.content h1 {
+  font-size: 50px;
+  color: #2851e6;
+}
+.h2 {
+  /* font-size: 43px; */
+  color: rgba(11, 11, 15, 0.658);
+  animation-delay: 0.5s;
+}
+.profile-img {
+  width: 325px;
+  border-radius: 7px;
+  animation-delay: 1.5s;
+  margin-left: 300px;
+}
+.content {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+ul {
+  margin-right: 400px;
 }
