@@ -7,36 +7,14 @@
 header {
   font-family: "Courier New", Courier, monospace;
 }
-/* .top {
-  display: flex;
-  height: 35px;
-  width: 100%;
-  background-color: blueviolet;
-  padding-left: 200px;
 
-  align-items: center;
-  position: relative;
-} */
-/* .phone,
-.email,
-.location {
-  height: 20px;
-  width: 20px;
-}
-.phonenumber,
-.Gmail,
-.address {
-  margin-right: 20px;
-  padding-top: 5px; 
-}*/
 .navigation {
-  background: rgb(236, 119, 119);
+  background: rgba(245, 245, 245, 0.463);
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 11px 12px;
-  width: 100%;
 }
 .nav_div {
   display: inline-block;
@@ -71,10 +49,9 @@ body {
 }
 .Download_CV {
   background-color: white;
-
   border-color: rgb(144, 0, 255);
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
   color: rgb(144, 0, 255);
   border-radius: 7px;
   cursor: pointer;
@@ -102,7 +79,6 @@ body {
   color: #2851e6;
 }
 .h2 {
-  /* font-size: 43px; */
   color: rgba(11, 11, 15, 0.658);
   animation-delay: 0.5s;
 }
@@ -124,5 +100,219 @@ body {
   }
 }
 ul {
-  margin-right: 400px;
+  margin-right: 100px;
+}
+.Download_CV {
+  display: inline-block;
+  margin-top: 6px;
+}
+footer {
+  background-color: rgba(245, 245, 245, 0.463);
+}
+.social_links {
+  display: flex;
+  justify-content: center;
+}
+.social_links a {
+  text-decoration: none;
+  padding: 11px;
+  background-color: white;
+  margin: 13px;
+  border-radius: 55%;
+}
+.social_links a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+.social_links a:hover {
+  background-color: black;
+  transition: 0.65s;
+}
+.social_links a i:hover {
+  color: white;
+  transition: 0.65s;
+}
+.copy-right {
+  background-color: rgba(245, 245, 245, 0.463);
+  padding: 20px;
+  text-align: center;
+}
+.copy-right p {
+  color: black;
+}
+
+@media (max-width: 888px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-img {
+    margin: 0 auto;
+    width: 50%;
+  }
+  header {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+  }
+}
+
+/* CONTACT PAGE CSS */
+
+.contact {
+  min-height: 100vh;
+  padding: 50px;
+  text-align: center;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+.contact_wrap {
+  display: grid;
+
+  grid-gap: 30px;
+}
+.Contact-form {
+  text-align: left;
+}
+.Contact-form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  color: #333;
+}
+/* input:focus,
+textarea : focus {
+  outline: none;
+  box-shadow: 0 0 8px #bbb;
+} */
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: #4caf49;
+}
+.contact-info {
+  text-align: left;
+}
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.contact-info p {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 25px;
+  font-weight: bold;
+}
+contact-info i {
+  color: #4caf50;
+  margin-right: 10px;
+}
+.phone,
+.email,
+.location {
+  height: 20px;
+  width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .contact_wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* PROJECT-WEBPAGE CSS */
+
+.title_project h1 {
+  text-align: center;
+  padding-top: 47px;
+  font-size: 39px;
+}
+.project_services {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 83px auto;
+  text-align: center;
+}
+.project_icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0px 25px;
+  padding: 9px 24px;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-between;
+  background-color: skyblue;
+  border-radius: 9px;
+}
+.project_icon:hover {
+  background-color: rgba(245, 245, 245, 0.223);
+  transition: 0.4s;
+}
+
+.project_icon h2 {
+  font-size: 28px;
+  color: rgb(41, 57, 52);
+  margin-bottom: 20px;
+}
+.project_icon p {
+  font-size: 18px;
+  margin-bottom: 23px;
+  line-height: 1.5;
+  color: rgb(43, 59, 228);
+}
+.project_button {
+  padding: 6px 5px;
+  background-color: #561585;
+}
+.project_logo {
+  width: 50px;
+  height: 5opx;
+  object-fit: cover;
+  border-radius: 8px;
+}
+@media screen and (max-width: 925px) {
+  .project_services {
+    display: flex;
+    flex-direction: column;
+  }
+  .project_icon {
+    width: 85%;
+    display: flex;
+    margin: 20px 0px;
+  }
 }
