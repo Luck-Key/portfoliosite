@@ -44,8 +44,9 @@ li a:hover {
 }
 
 body {
-  background-image: url(background.jpg);
-  background-size: cover;
+  background-color: #a0aecd;
+  font-family: Montserrat;
+  /* position: absolute; */
 }
 .Download_CV {
   background-color: white;
@@ -82,11 +83,17 @@ body {
   color: rgba(11, 11, 15, 0.658);
   animation-delay: 0.5s;
 }
+.bio {
+  font-size: 17px;
+  color: black;
+}
+
 .profile-img {
   width: 325px;
   border-radius: 7px;
   animation-delay: 1.5s;
   margin-left: 300px;
+  margin-top: -120px;
 }
 .content {
   opacity: 0;
