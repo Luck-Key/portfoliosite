@@ -5,12 +5,12 @@
   text-decoration: none;
 }
 header {
-  font-family: "Courier New", Courier, monospace;
+  font-family: monospace;
 }
 
 .navigation {
   background: rgba(245, 245, 245, 0.463);
-  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-family:  sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +46,6 @@ li a:hover {
 body {
   background-color: #a0aecd;
   font-family: Montserrat;
-  /* position: absolute; */
 }
 
 .content {
@@ -63,10 +62,11 @@ body {
   animation-delay: 0.5s;
 }
 .bio {
-  font-size: 20px;
+  font-size: 25px;
   color: black;
   height: 60px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Montserrat;
+
 }
 
 .profile-img {
@@ -100,6 +100,7 @@ footer {
 .social_links {
   display: flex;
   justify-content: center;
+  /* margin-top: 10rem; */
 }
 .social_links a {
   text-decoration: none;
@@ -147,6 +148,13 @@ footer {
   }
   nav {
     width: 100%;
+  }
+
+}
+@media(max-width:868px){
+  .profile-img {
+    margin: 0 auto;
+    width: 50%;
   }
 }
 
