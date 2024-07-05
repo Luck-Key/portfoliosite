@@ -338,6 +338,7 @@ contact-info i {
   /* SITE-REPORT */
 
 .ub {
+  margin-left: 20px;
   padding: 11px;
 }
 
@@ -346,6 +347,18 @@ contact-info i {
   padding-left: 61px;
 }
 
+.ghi {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.ghi img{
+  
+  width: 50%;
+  margin: 0 auto;
+}
 
 /* VEDIO PAGE */
 .ba{
