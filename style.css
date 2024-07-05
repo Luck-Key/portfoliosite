@@ -7,13 +7,11 @@ body,html{
  width: 100%;
  height: 100%;
  font-family: 'Merriweather';
-
-
 }
 nav{
   width: 100%;
   height: 80px;
-  background: rgba(214, 205, 205, 0.463);
+  background: rgba(180, 156, 156, 0.463);
 }
 .logo {
   line-height: 80px;
@@ -171,19 +169,17 @@ nav ul{
 
 }
 
-
-
 /* CONTACT PAGE CSS */
 @media(max-width:570px){
   #em{
-   font-size: small;
+   font-size: 20px;
   }
 
 }
 .ab{
   display: flex;
   gap: 20px;
-}
+} 
 .contact {
   min-height: 100vh;
   padding: 50px;
@@ -200,7 +196,6 @@ nav ul{
 }
 .contact_wrap {
   display: grid;
-
   grid-gap: 30px;
 }
 .Contact-form {
@@ -209,7 +204,6 @@ nav ul{
 .Contact-form h3 {
   font-size: 24px;
   margin-bottom: 20px;
-
   text-align: center;
 }
 .form-group {
@@ -249,6 +243,7 @@ button:hover {
   color: #555;
   font-size: 25px;
   font-weight: bold;
+  display: inline-block;
 }
 contact-info i {
   color: #4caf50;
@@ -259,7 +254,7 @@ contact-info i {
   background-color: rgba(214, 205, 205, 0.463);
 }
 .contact_wrap input,textarea{
-  width: 70%  ;
+  width: 70%;
 }
 @media(max-width:608px){
 .container{
@@ -272,18 +267,8 @@ contact-info i {
 .phone,
 .email,
 .location {
-  height: 20px;
-  width: 20px;
-}
-
-
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 20px;
-  }
-  .contact_wrap {
-    grid-template-columns: 1fr;
-  }
+  height: 19px;
+  width: 19px;
 }
 
 /* PROJECT-WEBPAGE CSS */
@@ -298,7 +283,7 @@ contact-info i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 83px auto;
+  margin: 81px auto;
   text-align: center;
 }
 .project_icon {
@@ -317,9 +302,6 @@ contact-info i {
   background-color: #b39fc2 ;
   transition: 0.4s;
 }
-.footer_thng{
-  margin-top: 50px;
-}
 
 .project_icon h2 {
   font-size: 28px;
@@ -328,7 +310,7 @@ contact-info i {
 }
 .project_icon p {
   font-size: 18px;
-  margin-bottom: 23px;
+  margin-bottom: 30px;
   line-height: 1.5;
   color: rgb(43, 59, 228);
 }
@@ -337,11 +319,11 @@ contact-info i {
   background-color: #561585;
 }
 .project_logo {
-  width: 50px;
-  height: 5opx;
+   width: 30px;
+   height: 30px;
   object-fit: cover;
   border-radius: 5px;
-}
+} 
 @media screen and (max-width: 925px) {
   .project_services {
     display: flex;
@@ -362,4 +344,19 @@ contact-info i {
 .gae {
   padding: 11px;
   padding-left: 61px;
+}
+
+
+/* VEDIO PAGE */
+.ba{
+  margin-top: 100px;
+  margin-left: 440px;
+  width: 600px;
+} 
+@media (max-width:654px){
+  .ba{
+    width: 200px;
+    margin-left: 55px;
+  }
+
 }
