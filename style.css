@@ -137,18 +137,18 @@ li a:hover {
      margin-top: 110px;
       gap: 50px;
       width: 60%;
-    
     }
 
 #check:checked ~ .ul_nav {
   left: 0;
-  li{
+}
+#check:checked ~ .ul_nav li{
       display: block;
       text-align: center; 
       line-height: 35px;
-      margin: 10px;
-  }
-}
+      margin: 10px; 
+    }
+
 .nav_checkbtn{
   display: block;
   } 
@@ -160,7 +160,7 @@ nav ul{
   top: 80px;
   left: -100%;
   }
-}
+} 
 @media(max-width: 614px){
   .profile-img{
       align-items: center;
