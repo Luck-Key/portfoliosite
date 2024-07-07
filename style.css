@@ -135,6 +135,7 @@ li a:hover {
     .profile-img {
      margin-left:60px;
      margin-top: 110px;
+     border-radius: 9px;
       gap: 50px;
       width: 60%;
     }
@@ -165,6 +166,7 @@ nav ul{
   .profile-img{
       align-items: center;
       margin-left: -25%;
+      width: 250px;
   }
 
 }
